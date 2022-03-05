@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px;
+    gap: 30px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.container {
+    padding: 30px;
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6), 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+img {
+    border-radius: 50%;
+    border-style: solid;
+    width: 55%;
+    margin-right: -10px;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.f-color {
+    color: hsl(0, 0%, 81%);
+}
+
+.f-color-black {
+    color: hsl(219, 29%, 14%, 80%);
+}
+
+.body-title {
+    color: hsl(219, 29%, 14%, 90%);
+}
+
+.article1 span,
+.article2 span,
+.article5 span {
+    color: hsl(0, 0%, 81%, 50%);
+    font-size: 12px;
+}
+
+.article3 span,
+.article4 span {
+    font-size: 11px;
+    color: hsl(0, 3%, 51%);
+}
+
+.article1 {
+    transition: 0.2s;
+    background-color: hsl(263, 55%, 52%);
+    grid-column: 1/3;
+    color: hsl(0, 0%, 100%);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: top right 100px;
+    background-size: 100px;
+}
+
+.article2 {
+    transition: 0.2s;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.article3 {
+    transition: 0.2s;
+    background-color: hsl(0, 0%, 100%);
+    grid-column: 4/-1;
+    grid-row: -1/3;
+}
+
+.article4 {
+    transition: 0.2s;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.article5 {
+    transition: 0.2s;
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 2/4;
+    color: hsl(0, 0%, 100%);
+}
+
+.rev {
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.rev-clr {
+    color: hsl(0, 0%, 81%);
+    transition: 0.2s;
+}
+
+.rev-clr-dark {
+    color: hsl(0, 3%, 51%);
+    transition: 0.2s;
+}
+
+.article1:hover,
+.article2:hover,
+.article3:hover,
+.article4:hover,
+.article5:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+@media(max-width:1080px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5px;
+        max-width: 90%;
+        gap: 5px;
+    }
+    .article1{
+        background-size: 90px;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        background-position: top  right 30px;
+    }
+    .article1,
+    .article2,
+    .article3,
+    .article4,
+    .article5 {
+        transform: scale(0.9);
+        min-width: 300px;
+    }
+
+    .article1:hover,
+    .article2:hover,
+    .article3:hover,
+    .article4:hover,
+    .article5:hover {
+        transform: scale(0.9);
+    }
+}
