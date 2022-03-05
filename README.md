@@ -33,7 +33,7 @@ Users should be able to:
 - Mobile-first workflow
 
 ### Useful resources
-- [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) - His channel helped me for thr Grid alignment amazing channel overall if you wante to learn HTML & CSS.
+- [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) - His channel helped me for the Grid alignment amazing channel overall if you want to learn HTML & CSS.
 
 ## Author
 - Website - [My Portfolio](https://m0hamedf.github.io/My-Portfolio/)
